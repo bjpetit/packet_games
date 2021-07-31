@@ -1,8 +1,6 @@
 #!/bin/bash
 # This is the entry point on the system hosting games. To call this 
-# script the following is set up...
-#
-#
+# script see the games.xinetd file.
 #
 TERM=vt52
 LOGFILE=selector_log.txt
