@@ -1,0 +1,11 @@
+service games
+{
+        disable         = no
+	    flags		    = NODELAY KEEPALIVE
+        server          = /opt/games/game_connector.sh
+        socket_type     = stream
+        protocol        = tcp
+	    port		    = 63000
+        user            = pi
+        wait            = no
+}

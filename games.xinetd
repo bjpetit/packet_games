@@ -1,0 +1,16 @@
+# default: off
+# description: An xinetd internal service which echo's characters back to
+# clients.
+# This is the tcp version.
+service games
+{
+	disable		= no 
+	flags		= NODELAY KEEPALIVE
+	socket_type	= stream
+	protocol	= tcp
+	user		= ruser
+	wait		= no
+	port		= 63000
+	server		= /opt/games/selector.sh
+	server_args	= packet
+}
